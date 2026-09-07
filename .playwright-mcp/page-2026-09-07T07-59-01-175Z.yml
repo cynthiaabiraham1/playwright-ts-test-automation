@@ -1,0 +1,399 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - text: View the
+    - link "Documentation" [ref=f3e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=f3e5]:
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=f3e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=f3e10] [cursor=pointer]
+    - navigation [ref=f3e11]:
+      - generic [ref=f3e12]:
+        - link "Practice Software Testing - Toolshop" [ref=f3e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f3e32]:
+          - menubar "Main menu" [ref=f3e33]:
+            - menuitem [ref=f3e34]:
+              - link "Home" [ref=f3e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=f3e36]:
+              - button "Categories" [ref=f3e37] [cursor=pointer]
+            - menuitem [ref=f3e38]:
+              - link "Contact" [ref=f3e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=f3e40]:
+              - link "Sign in" [ref=f3e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=f3e43] [cursor=pointer]: EN
+  - generic [ref=f3e51]:
+    - heading "Customer registration" [level=3] [ref=f3e52]
+    - generic [ref=f3e54]:
+      - generic [ref=f3e55]:
+        - generic [ref=f3e56]:
+          - generic [ref=f3e57]: First name
+          - textbox "First name" [invalid] [ref=f3e58]:
+            - /placeholder: First name *
+        - alert [ref=f3e140]:
+          - generic [ref=f3e141]: First name is required
+      - generic [ref=f3e59]:
+        - generic [ref=f3e60]:
+          - generic [ref=f3e61]: Last name
+          - textbox "Last name" [invalid] [ref=f3e62]:
+            - /placeholder: Your last name *
+        - alert [ref=f3e142]:
+          - generic [ref=f3e143]: Last name is required
+      - generic [ref=f3e63]:
+        - generic [ref=f3e64]: Date of Birth *
+        - textbox "Date of Birth *" [invalid] [ref=f3e65]:
+          - /placeholder: YYYY-MM-DD
+        - alert [ref=f3e144]:
+          - generic [ref=f3e145]: Please enter a valid date in YYYY-MM-DD format.
+          - generic [ref=f3e146]: Date of Birth is required
+      - generic [ref=f3e66]:
+        - generic [ref=f3e67]:
+          - generic [ref=f3e68]: Country
+          - combobox "Country" [invalid] [ref=f3e69]:
+            - option "Albania"
+            - option "Åland Islands"
+            - option "Algeria"
+            - option "American Samoa"
+            - option "Andorra"
+            - option "Angola"
+            - option "Anguilla"
+            - option "Antarctica"
+            - option "Antigua and Barbuda"
+            - option "Argentina"
+            - option "Armenia"
+            - option "Aruba"
+            - option "Australia"
+            - option "Austria"
+            - option "Azerbaijan"
+            - option "Bahamas (the)"
+            - option "Bahrain"
+            - option "Bangladesh"
+            - option "Barbados"
+            - option "Belarus"
+            - option "Belgium"
+            - option "Belize"
+            - option "Benin"
+            - option "Bermuda"
+            - option "Bhutan"
+            - option "Bolivia (Plurinational State of)"
+            - option "Bonaire, Sint Eustatius and Saba"
+            - option "Bosnia and Herzegovina"
+            - option "Botswana"
+            - option "Bouvet Island"
+            - option "Brazil"
+            - option "British Indian Ocean Territory (the)"
+            - option "Brunei Darussalam"
+            - option "Bulgaria"
+            - option "Burkina Faso"
+            - option "Burundi"
+            - option "Cabo Verde"
+            - option "Cambodia"
+            - option "Cameroon"
+            - option "Canada"
+            - option "Cayman Islands (the)"
+            - option "Central African Republic (the)"
+            - option "Chad"
+            - option "Chile"
+            - option "China"
+            - option "Christmas Island"
+            - option "Cocos (Keeling) Islands (the)"
+            - option "Colombia"
+            - option "Comoros (the)"
+            - option "Congo (the Democratic Republic of the)"
+            - option "Congo (the)"
+            - option "Cook Islands (the)"
+            - option "Costa Rica"
+            - option "Croatia"
+            - option "Cuba"
+            - option "Curaçao"
+            - option "Cyprus"
+            - option "Czechia"
+            - option "Côte d'Ivoire"
+            - option "Denmark"
+            - option "Djibouti"
+            - option "Dominica"
+            - option "Dominican Republic (the)"
+            - option "Ecuador"
+            - option "Egypt"
+            - option "El Salvador"
+            - option "Equatorial Guinea"
+            - option "Eritrea"
+            - option "Estonia"
+            - option "Eswatini"
+            - option "Ethiopia"
+            - option "Falkland Islands (the) [Malvinas]"
+            - option "Faroe Islands (the)"
+            - option "Fiji"
+            - option "Finland"
+            - option "France"
+            - option "French Guiana"
+            - option "French Polynesia"
+            - option "French Southern Territories (the)"
+            - option "Gabon"
+            - option "Gambia (the)"
+            - option "Georgia"
+            - option "Germany"
+            - option "Ghana"
+            - option "Gibraltar"
+            - option "Greece"
+            - option "Greenland"
+            - option "Grenada"
+            - option "Guadeloupe"
+            - option "Guam"
+            - option "Guatemala"
+            - option "Guernsey"
+            - option "Guinea"
+            - option "Guinea-Bissau"
+            - option "Guyana"
+            - option "Haiti"
+            - option "Heard Island and McDonald Islands"
+            - option "Holy See (the)"
+            - option "Honduras"
+            - option "Hong Kong"
+            - option "Hungary"
+            - option "Iceland"
+            - option "India"
+            - option "Indonesia"
+            - option "Iran (Islamic Republic of)"
+            - option "Iraq"
+            - option "Ireland"
+            - option "Isle of Man"
+            - option "Israel"
+            - option "Italy"
+            - option "Jamaica"
+            - option "Japan"
+            - option "Jersey"
+            - option "Jordan"
+            - option "Kazakhstan"
+            - option "Kenya"
+            - option "Kiribati"
+            - option "Korea (the Democratic People's Republic of)"
+            - option "Korea (the Republic of)"
+            - option "Kuwait"
+            - option "Kyrgyzstan"
+            - option "Lao People's Democratic Republic (the)"
+            - option "Latvia"
+            - option "Lebanon"
+            - option "Lesotho"
+            - option "Liberia"
+            - option "Libya"
+            - option "Liechtenstein"
+            - option "Lithuania"
+            - option "Luxembourg"
+            - option "Macao"
+            - option "Madagascar"
+            - option "Malawi"
+            - option "Malaysia"
+            - option "Maldives"
+            - option "Mali"
+            - option "Malta"
+            - option "Marshall Islands (the)"
+            - option "Martinique"
+            - option "Mauritania"
+            - option "Mauritius"
+            - option "Mayotte"
+            - option "Mexico"
+            - option "Micronesia (Federated States of)"
+            - option "Moldova (the Republic of)"
+            - option "Monaco"
+            - option "Mongolia"
+            - option "Montenegro"
+            - option "Montserrat"
+            - option "Morocco"
+            - option "Mozambique"
+            - option "Myanmar"
+            - option "Namibia"
+            - option "Nauru"
+            - option "Nepal"
+            - option "Netherlands (the)"
+            - option "New Caledonia"
+            - option "New Zealand"
+            - option "Nicaragua"
+            - option "Niger (the)"
+            - option "Nigeria"
+            - option "Niue"
+            - option "Norfolk Island"
+            - option "Northern Mariana Islands (the)"
+            - option "Norway"
+            - option "Oman"
+            - option "Pakistan"
+            - option "Palau"
+            - option "Palestine, State of"
+            - option "Panama"
+            - option "Papua New Guinea"
+            - option "Paraguay"
+            - option "Peru"
+            - option "Philippines (the)"
+            - option "Pitcairn"
+            - option "Poland"
+            - option "Portugal"
+            - option "Puerto Rico"
+            - option "Qatar"
+            - option "Republic of North Macedonia"
+            - option "Romania"
+            - option "Russian Federation (the)"
+            - option "Rwanda"
+            - option "Réunion"
+            - option "Saint Barthélemy"
+            - option "Saint Helena, Ascension and Tristan da Cunha"
+            - option "Saint Kitts and Nevis"
+            - option "Saint Lucia"
+            - option "Saint Martin (French part)"
+            - option "Saint Pierre and Miquelon"
+            - option "Saint Vincent and the Grenadines"
+            - option "Samoa"
+            - option "San Marino"
+            - option "Sao Tome and Principe"
+            - option "Saudi Arabia"
+            - option "Senegal"
+            - option "Serbia"
+            - option "Seychelles"
+            - option "Sierra Leone"
+            - option "Singapore"
+            - option "Sint Maarten (Dutch part)"
+            - option "Slovakia"
+            - option "Slovenia"
+            - option "Solomon Islands"
+            - option "Somalia"
+            - option "South Africa"
+            - option "South Georgia and the South Sandwich Islands"
+            - option "South Sudan"
+            - option "Spain"
+            - option "Sri Lanka"
+            - option "Sudan (the)"
+            - option "Suriname"
+            - option "Svalbard and Jan Mayen"
+            - option "Sweden"
+            - option "Switzerland"
+            - option "Syrian Arab Republic"
+            - option "Taiwan (Province of China)"
+            - option "Tajikistan"
+            - option "Tanzania, United Republic of"
+            - option "Thailand"
+            - option "Timor-Leste"
+            - option "Togo"
+            - option "Tokelau"
+            - option "Tonga"
+            - option "Trinidad and Tobago"
+            - option "Tunisia"
+            - option "Turkey"
+            - option "Turkmenistan"
+            - option "Turks and Caicos Islands (the)"
+            - option "Tuvalu"
+            - option "Uganda"
+            - option "Ukraine"
+            - option "United Arab Emirates (the)"
+            - option "United Kingdom of Great Britain and Northern Ireland (the)"
+            - option "United States Minor Outlying Islands (the)"
+            - option "United States of America (the)"
+            - option "Uruguay"
+            - option "Uzbekistan"
+            - option "Vanuatu"
+            - option "Venezuela (Bolivarian Republic of)"
+            - option "Viet Nam"
+            - option "Virgin Islands (British)"
+            - option "Virgin Islands (U.S.)"
+            - option "Wallis and Futuna"
+            - option "Western Sahara"
+            - option "Yemen"
+            - option "Zambia"
+            - option "Zimbabwe"
+        - alert [ref=f3e147]:
+          - generic [ref=f3e148]: Country is required
+      - generic [ref=f3e70]: Choose your country and enter the postal code and house number. Street, city and state will be filled in automatically.
+      - generic [ref=f3e71]:
+        - generic [ref=f3e72]:
+          - generic [ref=f3e73]: Postal code
+          - textbox "Postal code" [invalid] [ref=f3e74]:
+            - /placeholder: Your Postcode *
+        - alert [ref=f3e149]:
+          - generic [ref=f3e150]: Postcode is required
+      - generic [ref=f3e75]:
+        - generic [ref=f3e76]:
+          - generic [ref=f3e77]: House number
+          - textbox "House number" [ref=f3e78]:
+            - /placeholder: e.g. 42 *
+        - alert [ref=f3e151]:
+          - generic [ref=f3e152]: House number is required
+      - generic [ref=f3e79]:
+        - generic [ref=f3e80]: Street
+        - textbox "Street" [invalid] [ref=f3e81]:
+          - /placeholder: Your Street *
+        - alert [ref=f3e153]:
+          - generic [ref=f3e154]: Street is required
+      - generic [ref=f3e82]:
+        - generic [ref=f3e83]:
+          - generic [ref=f3e84]: City
+          - textbox "City" [invalid] [ref=f3e85]:
+            - /placeholder: Your City *
+        - alert [ref=f3e155]:
+          - generic [ref=f3e156]: City is required
+      - generic [ref=f3e86]:
+        - generic [ref=f3e87]:
+          - generic [ref=f3e88]: State
+          - textbox "State" [invalid] [ref=f3e89]:
+            - /placeholder: Your State *
+        - alert [ref=f3e157]:
+          - generic [ref=f3e158]: State is required
+      - generic [ref=f3e90]:
+        - generic [ref=f3e91]: Phone
+        - textbox "Phone" [invalid] [ref=f3e92]:
+          - /placeholder: Your phone *
+        - alert [ref=f3e159]:
+          - generic [ref=f3e160]: Phone is required.
+      - generic [ref=f3e93]:
+        - generic [ref=f3e94]: Email address
+        - textbox "Email address" [invalid] [ref=f3e95]:
+          - /placeholder: Your email *
+        - alert [ref=f3e161]:
+          - generic [ref=f3e162]: Email is required
+      - generic [ref=f3e96]:
+        - generic [ref=f3e97]: Password
+        - generic [ref=f3e99]:
+          - textbox "Password" [invalid] [ref=f3e100]:
+            - /placeholder: Your password
+          - button [ref=f3e102] [cursor=pointer]
+        - generic [ref=f3e106]:
+          - text: "Your password must:"
+          - list [ref=f3e107]:
+            - list [ref=f3e108]:
+              - listitem [ref=f3e109]: Be at least 8 characters long
+              - listitem [ref=f3e110]: Contain both uppercase and lowercase letters
+              - listitem [ref=f3e111]: Include at least one number
+              - listitem [ref=f3e112]: "Have at least one special symbol (e.g., @, #, $, etc.)"
+        - generic [ref=f3e113]:
+          - text: "Password strength:"
+          - generic [ref=f3e114]:
+            - generic [ref=f3e115]: Weak
+            - generic [ref=f3e116]: Moderate
+            - generic [ref=f3e117]: Strong
+            - generic [ref=f3e118]: Very Strong
+            - generic [ref=f3e119]: Excellent
+        - alert [ref=f3e163]:
+          - generic [ref=f3e164]: Password is required
+          - generic [ref=f3e165]: Password must be minimal 6 characters long.
+          - generic [ref=f3e166]: Password can not include invalid characters.
+      - button "Register" [active] [ref=f3e121] [cursor=pointer]
+  - contentinfo [ref=f3e123]:
+    - generic [ref=f3e124]:
+      - text: This is a DEMO application (
+      - link "GitHub repo" [ref=f3e125] [cursor=pointer]:
+        - /url: https://github.com/testsmith-io/practice-software-testing
+      - text: ), used for software testing training purpose. |
+      - link "Privacy Policy" [ref=f3e126] [cursor=pointer]:
+        - /url: /privacy
+      - text: "| Banner photo by"
+      - link "Barn Images" [ref=f3e127] [cursor=pointer]:
+        - /url: https://unsplash.com/@barnimages
+      - text: "on"
+      - link "Unsplash" [ref=f3e128] [cursor=pointer]:
+        - /url: https://unsplash.com/photos/t5YUoHW6zRo
+      - text: .
+    - generic [ref=f3e129]: v2.4 | Built 2026-08-22 | Angular 20.0.5
+  - button "Open chat" [ref=f3e131] [cursor=pointer]
+  - button "Show live shop activity" [ref=f3e135] [cursor=pointer]
