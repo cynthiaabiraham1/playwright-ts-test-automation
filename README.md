@@ -6,6 +6,7 @@ End-to-end tests for the [Practice Software Testing](https://practicesoftwaretes
 
 - Node.js 18 or later
 - npm
+- Java 8 or later (required to generate Allure reports)
 
 ## Installation
 
@@ -57,6 +58,30 @@ Playwright generates an HTML report after a test run. Open it with:
 npx playwright show-report
 ```
 
+## Allure reporting
+
+This project generates Allure results through `allure-playwright`. The Allure command-line tool requires Java.
+
+Run the tests and generate an Allure HTML report in one command:
+
+```bash
+npm run test:allure
+```
+
+Alternatively, generate the report from existing test results:
+
+```bash
+npx allure generate allure-results --clean -o allure-report
+```
+
+Open the generated Allure report:
+
+```bash
+npm run report:allure
+```
+
+Allure result files are written to `allure-results/` and the generated report is stored in `allure-report/`. Both directories are excluded from Git.
+
 ## Project structure
 
 ```text
@@ -101,7 +126,7 @@ The test configuration is defined in [`playwright.config.ts`](./playwright.confi
 - Base URL: `https://practicesoftwaretesting.com`
 - Browsers: Chromium, Firefox, and WebKit
 - Test workers: 1
-- Reporter: HTML
+- Reporters: HTML and Allure
 - Retries: enabled on CI only
 
 The shopping and checkout tests use the demo account and demo payment details documented in the test plans. Do not use real payment information.

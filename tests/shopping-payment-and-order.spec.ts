@@ -11,9 +11,9 @@ test('Place an order with Hammer and Claw Hammer using demo payment', async ({ p
   await login.goto();
   await login.login('admin@practicesoftwaretesting.com', 'welcome01');
   await login.expectDashboard();
-  await product.goto('01M203YEW5XJBP338BYVZK6WNG');
+  await product.goto('01M21QECZYEA53WX5NVG59CXC4');
   await product.addToCartAndConfirm();
-  await product.goto('01M203YEW7JJW6VMJDK3WKPQSC');
+  await product.goto('01M21QED01H4JE50QXPSD0XQHE');
   await product.addToCartAndConfirm();
   await checkout.goto();
   await checkout.expectCartContainsProducts();
