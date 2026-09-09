@@ -32,10 +32,21 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Set up Java for Allure
+        if: always()
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
       - name: Run Playwright tests
         run: npx playwright test --project=chromium --grep-invert "@shopping"
         env:
           CI: true
+
+      - name: Generate Allure HTML report
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
 
       - name: Upload Playwright report
         if: always()
@@ -59,4 +70,12 @@ jobs:
         with:
           name: allure-results-chromium
           path: allure-results/
+          retention-days: 14
+
+      - name: Upload Allure HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-chromium
+          path: allure-report/
           retention-days: 14
