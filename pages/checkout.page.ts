@@ -50,6 +50,7 @@ export class CheckoutPage {
   }
 
   async openPayment() {
+    await expect(this.proceedFromBilling).toBeEnabled();
     await this.proceedFromBilling.click();
   }
 

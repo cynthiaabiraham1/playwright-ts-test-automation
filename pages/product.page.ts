@@ -7,8 +7,15 @@ export class ProductPage {
     this.addToCart = page.locator('[data-test="add-to-cart"]');
   }
 
-  async goto(productId: string) {
-    await this.page.goto(`/product/${productId}`);
+  async gotoByName(productName: string) {
+    await this.page.goto('/');
+    const product = this.page
+      .locator('a[href^="/product/"]')
+      .filter({ has: this.page.getByRole('heading', { name: productName, exact: true }) })
+      .first();
+
+    await product.click();
+    await expect(this.addToCart).toBeVisible();
   }
 
   async addToCartAndConfirm() {
