@@ -23,8 +23,19 @@ export class ProductPage {
       throw new Error(`Product "${productName}" was not found in the product API response`);
     }
 
-    await this.page.goto(`/product/${product.id}`);
-    await expect(this.addToCart).toBeVisible();
+    const productUrl = `/product/${product.id}`;
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      await this.page.goto(productUrl);
+      const rendered = await this.addToCart
+        .waitFor({ state: 'visible', timeout: 10000 })
+        .then(() => true)
+        .catch(() => false);
+      if (rendered) {
+        return;
+      }
+    }
+
+    throw new Error(`Product page for "${productName}" did not render the Add to cart button`);
   }
 
   async addToCartAndConfirm() {
