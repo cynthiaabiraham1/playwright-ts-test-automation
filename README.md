@@ -82,6 +82,19 @@ npm run report:allure
 
 Allure result files are written to `allure-results/` and the generated report is stored in `allure-report/`. Both directories are excluded from Git.
 
+## CI/CD
+
+GitHub Actions runs the Playwright suite automatically for pushes to `main` and `development`, pull requests targeting `main`, and manual workflow runs.
+
+The workflow is defined in [`.github/workflows/playwright.yml`](./.github/workflows/playwright.yml). It:
+
+1. Installs Node.js dependencies with `npm ci`.
+2. Installs Chromium, Firefox, and WebKit with their Linux dependencies.
+3. Runs the full Playwright suite.
+4. Uploads the HTML Playwright report, test results, and Allure results as workflow artifacts.
+
+Reports can be downloaded from the completed workflow run in the GitHub Actions tab.
+
 ## Project structure
 
 ```text
