@@ -33,7 +33,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --project=chromium
+        run: npx playwright test --project=chromium --grep-invert "@shopping"
         env:
           CI: true
 

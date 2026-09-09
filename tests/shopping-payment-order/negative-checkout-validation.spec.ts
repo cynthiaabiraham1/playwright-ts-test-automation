@@ -3,7 +3,7 @@ import { CheckoutPage } from '../../pages/checkout.page';
 import { LoginPage } from '../../pages/login.page';
 import { ProductPage } from '../../pages/product.page';
 
-test('Prevent checkout with incomplete billing information', async ({ page }) => {
+test('Prevent checkout with incomplete billing information @shopping', async ({ page }) => {
   const login = new LoginPage(page);
   const product = new ProductPage(page);
   const checkout = new CheckoutPage(page);

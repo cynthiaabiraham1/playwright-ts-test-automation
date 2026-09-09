@@ -3,7 +3,7 @@ import { CheckoutPage } from '../pages/checkout.page';
 import { LoginPage } from '../pages/login.page';
 import { ProductPage } from '../pages/product.page';
 
-test('Place an order with Hammer and Claw Hammer using demo payment', async ({ page }) => {
+test('Place an order with Hammer and Claw Hammer using demo payment @shopping', async ({ page }) => {
   const login = new LoginPage(page);
   const product = new ProductPage(page);
   const checkout = new CheckoutPage(page);

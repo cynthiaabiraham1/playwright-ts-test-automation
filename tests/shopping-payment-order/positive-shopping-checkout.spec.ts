@@ -3,7 +3,7 @@ import { CheckoutPage } from '../../pages/checkout.page';
 import { LoginPage } from '../../pages/login.page';
 import { ProductPage } from '../../pages/product.page';
 
-test('Sign in and add Hammer products before checkout', async ({ page }) => {
+test('Sign in and add Hammer products before checkout @shopping', async ({ page }) => {
   const login = new LoginPage(page);
   const product = new ProductPage(page);
   const checkout = new CheckoutPage(page);

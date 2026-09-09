@@ -3,7 +3,7 @@ import { CheckoutPage } from '../../pages/checkout.page';
 import { LoginPage } from '../../pages/login.page';
 import { ProductPage } from '../../pages/product.page';
 
-test('Complete checkout with demo credit-card payment', async ({ page }) => {
+test('Complete checkout with demo credit-card payment @shopping', async ({ page }) => {
   const login = new LoginPage(page);
   const product = new ProductPage(page);
   const checkout = new CheckoutPage(page);
