@@ -90,7 +90,7 @@ The workflow is defined in [`.github/workflows/playwright.yml`](./.github/workfl
 
 1. Installs Node.js dependencies with `npm ci`.
 2. Installs Chromium, Firefox, and WebKit with their Linux dependencies.
-3. Runs the full Playwright suite.
+3. Runs the full suite in parallel browser jobs, with one job each for Chromium, Firefox, and WebKit.
 4. Uploads the HTML Playwright report, test results, and Allure results as workflow artifacts.
 
 Reports can be downloaded from the completed workflow run in the GitHub Actions tab.
