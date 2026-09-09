@@ -8,13 +8,22 @@ export class ProductPage {
   }
 
   async gotoByName(productName: string) {
-    await this.page.goto('/');
-    const product = this.page
-      .locator('a[href^="/product/"]')
-      .filter({ has: this.page.getByRole('heading', { name: productName, exact: true }) })
-      .first();
+    const response = await this.page.request.get(
+      'https://api.practicesoftwaretesting.com/products?page=0&size=50',
+    );
+    if (!response.ok()) {
+      throw new Error(`Product API request failed with status ${response.status()}`);
+    }
 
-    await product.click();
+    const body = (await response.json()) as {
+      data: Array<{ id: string; name: string }>;
+    };
+    const product = body.data.find(({ name }) => name === productName);
+    if (!product) {
+      throw new Error(`Product "${productName}" was not found in the product API response`);
+    }
+
+    await this.page.goto(`/product/${product.id}`);
     await expect(this.addToCart).toBeVisible();
   }
 
